@@ -1,0 +1,19 @@
+/* Dark / Light Mode Button */
+.dark-light-btn {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: 2px 3px 5px grey;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-light-btn:hover {
+    cursor: pointer;
+}
