@@ -17,3 +17,13 @@
 .dark-light-btn:hover {
     cursor: pointer;
 }
+
+body {
+    font-family: 'Segoe UI Black';
+    background-color: grey;
+    color: white;
+}
+
+
+
+
