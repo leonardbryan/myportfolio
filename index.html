@@ -11,14 +11,14 @@
     <title>My Portfolio</title>
 
 </head>
-<body id="bd">
+<body>
         <!-- navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow p-3 mb-5 bg-body rounde" id="dmNavBar">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow p-3 mb-5 bg-dark rounde" id="dmNavBar">
         <div class="container-fluid">
             <!-- logo / icon -->
             <a href="#" class="navbar-brand">
                
-                <span class="text-secondary fs-4 fw-normal" id="dmName">
+                <span class="text-light fs-4 fw-normal" id="dmName">
                     Leonard Bryan Padada
                     <!-- <i class="bi bi-brightness-high-fill fs-4"></i> -->
                 </span>
@@ -31,22 +31,22 @@
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="" class="nav-link" href="">
+                        <a href="" class="nav-link  text-light" href="">
                             About Me
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link" href="">
+                        <a href="" class="nav-link  text-light" href="">
                             Skills
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link" href="">
+                        <a href="" class="nav-link  text-light" href="">
                             Projects
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link" href="">
+                        <a href="" class="nav-link  text-light" href="">
                             Contact Me
                         </a>
                     </li>
@@ -54,9 +54,38 @@
             </div>
         </div>
     </nav>
+
+    <!-- contact section -->
+    <div class="container-sm text-dark fs-8" id="contactMe">
+        <h4>Contact me</h4>
+        <div class="row gx-5">
+            <div class="col-md mb-3">
+                <div class="p-3">
+                  <div class="form-floating  mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Name</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="Email Address">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+            <div class="col-md mb-3">
+              <div class="p-3 border">
+                  
+              </div>
+            </div>
+        </div>
+    </div>
      <!-- Dark / Light Mode Button -->
-    <div class="dark-light-btn bg-light" data-bs-toggle="tooltip" data-bs-placement="top" title="Activate Dark mode!" id="bgIcon">
-            <i class="bi bi-moon-stars-fill fs-6 text-secondary" id="moonIcon"></i>
+    <div class="dark-light-btn bg-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Activate Dark mode!" id="bgIcon">
+            <i class="bi bi-moon-stars-fill fs-5 text-white" id="moonIcon"></i>
     </div>
 </body>
 
