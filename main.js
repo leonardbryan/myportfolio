@@ -5,6 +5,19 @@ const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 
 
+// scroll up 
+const scrollTop = document.querySelector(".scrollUp");
+
+window.addEventListener("scroll", () => {
+  if(window.scrollY > 200){
+    scrollTop.classList.add("active");
+  }
+  else{
+    scrollTop.classList.remove("active");
+  }
+})
+
+
 // toggle button for Dark Mode theme
 // const secLinks = document.querySelector(".navbar-nav");
 // const dmBgNavBar = document.querySelector("#dmNavBar");
@@ -35,3 +48,5 @@ const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 // const tao1 = new Tao("Leonard","Bryan",1);
 // const tao2 = new Tao("Mark","Winston",2);
 // console.log(tao1.firstName);
+
+
