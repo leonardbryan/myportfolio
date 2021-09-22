@@ -14,6 +14,32 @@ body {
 }
 
 
+.form-btn {
+    outline: none;
+    border: 0;
+    line-height: 1;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    transition: 0.5s;
+}
+
+
+.header-list::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.header-list:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+
 
 /* scroll up  */
 .scrollUp {
