@@ -1,11 +1,16 @@
 body {
-    font-family: 'Segoe UI';
+    font-family: 'Century Gothic';
+    
     /* background-color: grey; */
-    color: white;
+    /* color: white; */
 }
 
 #img-logo {
     width: 100px;
+}
+
+.footer-logo {
+    width: 30px;
 }
 
 /* scroll up  */

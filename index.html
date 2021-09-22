@@ -13,13 +13,13 @@
 </head>
 <body>
         <!-- navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow p-3 mb-5 bg-dark rounde" id="dmNavBar">
+    <nav class="navbar navbar-expand-lg navbar-light shadow p-3 mb-5 bg-light" id="dmNavBar">
         <div class="container-fluid">
             <!-- logo / icon -->
-            <a href="#" class="navbar-brand">
+            <a href="#about" class="navbar-brand">
                
                 <span class="text-light fs-4 fw-normal" id="dmName">
-                    Leonard Bryan Padada
+                    <!-- Leonard Bryan Padada -->
                     <!-- <i class="bi bi-brightness-high-fill fs-4"></i> -->
                 </span>
             </a>
@@ -31,79 +31,98 @@
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="" class="nav-link  text-light" href="">
-                            About Me
+                        <a href="#about" class="nav-link   text-dark" href="">
+                            About
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link  text-light" href="">
-                            Skills
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link  text-light" href="">
+                        <a href="#projects" class="nav-link   text-dark" href="">
                             Projects
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#emailMe" class="nav-link  text-light" href="">
-                            Email Me
+                        <a href="#emailMe" class="nav-link   text-dark" href="">
+                            Contact
                         </a>
+                    </li>
+                    <li class="nav-item">
+                            <div class="form-check form-switch nav-link">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            </div>   
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container-sm text-dark" id="skills">
+    <div class="container text-dark text-center" id="about">
+        
+            <div class="row-md mb-3 gx-5 p-3 justify-content-center">
+                <div class="col-md mb-3 p-3">
+                    <h4>WELCOME</h4>
+                </div>
+                   <div class="col-md mb-3 p-3">
+                    Hi! I'm Leonard Padada a Junior Web Developer, passionate on developing customized webistes.
+                </div>  
+            </div>
+            
+    </div>
+
+    <!-- <div class="container-sm text-dark" id="skills">
         <h4 class="text-decoration-underline">Languages I've Learned</h4>
-        <div class="row gx-5 border-bottom border-dark">
+        <div class="row gx-5 border-bottom border-secondary">
             <div class="col-md mb-3 p-3">
                 <h5>Front-End</h5>
                 <div class="row gx-5 p-3">
                     <div class="col mb-3 p-3">
                         <div class="text-center">
                             <img src="images/html5.png" class="img-fluid" alt="..." id="img-logo">
+                            <figcaption class="figure-caption p-2">HTML5</figcaption>
                         </div>
                     </div>
                     <div class="col mb-3 p-3">
                         <div class="text-center">
                             <img src="images/css.png" class="img-fluid" alt="..." id="img-logo">
+                            <figcaption class="figure-caption p-2">CSS3</figcaption>
                         </div>
                     </div>
                     <div class="col mb-3 p-3">
                         <div class="text-center">
                             <img src="images/bootsrap.png" class="img-fluid" alt="..." id="img-logo">
+                            <figcaption class="figure-caption p-2">Bootstrap5</figcaption>
+                        </div>
+                    </div>
+                    <div class="col mb-3 p-3">
+                        <div class="text-center">
+                            <img src="images/js.png" class="img-fluid rounded" alt="..." id="img-logo">
+                            <figcaption class="figure-caption p-2">Javascript</figcaption>
                         </div>
                     </div>
                 </div>
+                
             </div>
             <div class="col-md mb-3 p-3">
                 <h5>Back-End</h5>
                 <div class="row gx-5 p-3">
                     <div class="col mb-3 p-3">
                         <div class="text-center">
-                            <img src="images/js.png" class="img-fluid" alt="..." id="img-logo">
-                        </div>
-                    </div>
-                    <div class="col mb-3 p-3">
-                        <div class="text-center">
                             <img src="images/php.png" class="img-fluid" alt="..." id="img-logo">
+                            <figcaption class="figure-caption p-2">PHP</figcaption>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <br><br><br>
     <div class="container-sm text-dark" id="projects">
         <h4 class="text-decoration-underline">Things I've Done</h4>
-        <div class="row gx-5 border-bottom border-dark">
+        <div class="row gx-5 border-bottom border-secondary">
             <div class="col-md mb-3 p-3">
                 <p>First Demo-Project</p>
                 <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in optio, animi placeat a exercitationem nulla soluta iste deserunt, nemo temporibus quaerat aspernatur. Aut veritatis voluptatum reiciendis asperiores, amet tempore!</p>
-                <p>Front-end: <i class="fs-5 bi bi-github"></i></p>
-                <p>Back-end: <i class="fs-5 bi bi-github"></i></p>
+                <p>Technologies: <i class="fs-5 bi bi-github"></i></p>
                 <p>Source Code: <i class="fs-5 bi bi-github"></i></p>
             </div>
             <div class="col-md mb-3 p-3">
@@ -116,12 +135,11 @@
             </div>
         </div>
         <br>
-        <div class="row gx-5 border-bottom border-dark">
+        <div class="row gx-5 border-bottom border-secondary">
             <div class="col-md mb-3 p-3">
                 <p>Second Demo-Project</p>
                 <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in optio, animi placeat a exercitationem nulla soluta iste deserunt, nemo temporibus quaerat aspernatur. Aut veritatis voluptatum reiciendis asperiores, amet tempore!</p>
-                <p>Front-end: <i class="fs-5 bi bi-github"></i></p>
-                <p>Back-end: <i class="fs-5 bi bi-github"></i></p>
+                <p>Technologies: <i class="fs-5 bi bi-github"></i></p>
                 <p>Source Code: <i class="fs-5 bi bi-github"></i></p>
             </div>
             <div class="col-md mb-3 p-3">
@@ -134,19 +152,18 @@
             </div>
         </div>
         <br>
-        <div class="row gx-5 border-bottom border-dark">
+        <div class="row gx-5 border-bottom border-secondary">
             <div class="col-md mb-3 p-3">
                 <p>Third Demo-Project</p>
                 <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in optio, animi placeat a exercitationem nulla soluta iste deserunt, nemo temporibus quaerat aspernatur. Aut veritatis voluptatum reiciendis asperiores, amet tempore!</p>
-                <p>Front-end: <i class="fs-5 bi bi-github"></i></p>
-                <p>Back-end: <i class="fs-5 bi bi-github"></i></p>
+                <p>Technologies: <i class="fs-5 bi bi-github"></i></p>
                 <p>Source Code: <i class="fs-5 bi bi-github"></i></p>
             </div>
             <div class="col-md mb-3 p-3">
                 <div class="row gx-5">
                     <figure class="figure">
                         <img src="images/pic-3.jpg" class="figure-img img-fluid rounded" alt="...">
-                        <figcaption class="figure-caption">Live Demo: Link</figcaption>
+                        <figcaption class="figure-caption">Live Demo:</figcaption>
                     </figure>
                 </div>
             </div>
@@ -185,45 +202,19 @@
     <br><br><br>
     <footer class="bg-dark text-white pt-5 pb-4">
         <div class="container text-center text-md-left">
-            <div class="row text-center text-md-left">
-                <div class="col-md col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h4 class="mb-4 text-decoration-underline">Something</h4>
-                    
-                </div>    
-                <div class="col-md col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h4 class="mb-4 text-decoration-underline">Social Media</h4>
-                    
-                    <p>
-                        <i class="bi bi-facebook"></i>  Facebook
-                    </p>
-                    <p>
-                        <i class="bi bi-twitter"></i>   Twitter
-                    </p>
-                    <p>
-                        <i class="bi bi-youtube"></i>   Youtube
-                    </p>
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    HTML, CSS, Bootstrap, Javascript
                 </div>
-                <div class="col-md col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h4 class="mb-4 text-decoration-underline">Contacts</h4>
-                    <p>
-                        <i class="bi bi-house-fill"></i>    Barangay Centro Agdao, Davao City 8000
-                    </p>
-                    <p>
-                        <i class="bi bi-telephone-forward-fill"></i>    +63 977 423 0302
-                    </p>
-                    <p>
-                        <i class="bi bi-envelope-fill"></i>     leonard23bryan@gmail.com
-                    </p>
-                </div>           
-            </div>
-            <div class="container text-center pt-5 text-decoration-underline">
-                Copyright 2021 - All Rights Reserved
+                <div class="row justify-content-center">
+                    leonard23bryan@gmail.com
+                </div>
             </div>
             
         </div>
         
         <a href="#" class="scrollUp">
-            <i class="bi bi-arrow-up-circle-fill text-warning"></i>
+            <i class="bi bi-chevron-double-up text-warning"></i>
         </a>
     </footer>
      <!-- Dark / Light Mode Button -->
