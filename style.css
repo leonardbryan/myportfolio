@@ -5,7 +5,7 @@ body {
     color: white;
 }
 
-#img-logo {
+.img-logo {
     width: 40px;
 }
 
@@ -35,7 +35,7 @@ body {
     left: 500px;
     width: 200px;
     height: 100%;
-    background-color: rgba(163, 163, 163, 0.5);
+    background-color: rgba(138, 138, 138, 0.5);
     transform: skewX(45deg) translateX(200px);
     transition: 0.3s;
 }
@@ -55,7 +55,7 @@ body {
 }
 
 
-.header-list::after {
+/* .header-list::after {
     content: '';
     outline: none;
     display: block;
@@ -68,8 +68,92 @@ body {
 .header-list:hover::after{
     width: 100%;
     transition: width .3s;
+} */
+
+.main-pic {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(150deg, #343a40, #6c757d );  
 }
 
+.main-pic img {
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.main-pic:hover img{
+    left: 65%;
+    height: 400px;
+}
+
+.main-pic .main-pic-content {
+    position: relative;
+    width: 50%;
+    left: 20%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.main-pic:hover .main-pic-content {
+    left: -3%;
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 990px) {
+    
+    .main-pic {
+        position: relative;
+        width: auto;
+        max-width: 600px;
+    }
+
+}
+
+
+ul li a:before {
+    content: '';
+    position: relative;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #ffb700;
+    border-width: 0 0 0 3px;
+    transition: .3s;
+    opacity: 0;
+}
+
+ul li a:hover::before {
+    left: -8px;
+    opacity: 1;
+}
+
+ul li a:after {
+    content: '';
+    position: relative;
+    right: 12px;
+    width: 12px;
+    right: 12px;
+    border: 3px solid #ffb700;
+    border-width: 0 3px 0 0;
+    transition: .3s;
+    opacity: 0;
+}
+
+ul li a:hover::after {
+    right: -8px;
+    opacity: 1;
+}
 
 
 /* scroll up  */
