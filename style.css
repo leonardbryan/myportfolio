@@ -2,6 +2,8 @@ body {
     font-family: 'Century Gothic';
     background-color: #2b2b2b;
     color: white;
+    scroll-snap-type: mandatory;
+    overflow-y: scroll;
 }
 
 .img-logo {
@@ -14,6 +16,7 @@ body {
 
 .section-div {
     min-height: 100vh;
+    scroll-snap-align: start;
 }
 
 
