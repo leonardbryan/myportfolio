@@ -17,6 +17,19 @@ window.addEventListener("scroll", () => {
   }
 })
 
+// parallax 3d circle
+const p = document.addEventListener("mousemove", parallax);
+    function parallax(e){
+        document.querySelectorAll(".para-img").forEach(function(move){
+            var movingValue = move.getAttribute("data-value");
+            var x = (e.clientX * movingValue) / 300;
+            var y = (e.clientY * movingValue) / 300;
+
+            move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+
+        });
+    }
+
 
 // toggle button for Dark Mode theme
 // const secLinks = document.querySelector(".navbar-nav");
