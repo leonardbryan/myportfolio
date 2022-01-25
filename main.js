@@ -15,29 +15,46 @@ let tArea = document.querySelectorAll('textarea')
 if (toastTrigger) {
   toastTrigger.addEventListener('click', function () {
     var c = 0;
+    // var pattern = /^[^ ]+@[^ ]+\.[a-z]{2-3}$/;
+    // var pattern = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
 
     if(nameField.value == '' || nameField.value == null){
+      nameField.classList.remove('border-success');
       nameField.classList.add('border-danger');
       c++;
     }
     else{
-      nameField.classList.add('border-success');x
+      nameField.classList.remove('border-danger');
+      nameField.classList.add('border-success');
     }
 
     if(emailField.value == '' || emailField.value == null){
+      emailField.classList.remove('border-success');
       emailField.classList.add('border-danger');
       c++;
     }
     else{
-      emailField.classList.add('border-success');
+        emailField.classList.remove('border-danger');
+        emailField.classList.add('border-success');
+      // if(emailField.value.match(pattern)){
+      //   emailField.classList.remove('border-danger');
+      //   emailField.classList.add('border-success');
+      // }
+      // else {
+      //   emailField.classList.remove('border-success');
+      //   emailField.classList.add('border-danger');
+      //   c++;
+      // }
     }
 
     if(textareaField.value == '' || textareaField.value == null){
+      textareaField.classList.remove('border-success');
       textareaField.classList.add('border-danger');
       c++;
     }
 
     else{
+      textareaField.classList.remove('border-danger');
       textareaField.classList.add('border-success');
     }
 
@@ -56,6 +73,7 @@ if (toastTrigger) {
     
   })
 }
+
 
 var myModal = document.getElementById('myModal')
 var myInput = document.getElementById('myInput')
