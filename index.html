@@ -4,379 +4,427 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>My Portfolio - BS</title>
     <link rel="stylesheet" href="style.css">
-    <title>My Portfolio</title>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
     
-    
-    <!-- navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light mb-5" id="dmNavBar">
-        <div class="container-fluid">
-            <!-- logo / icon -->
-            <a href="#about" class="navbar-brand">
-               
-                <span class="fs-4 fw-normal" id="dmName">
-                    <!-- Leonard Bryan Padada -->
-                    <!-- <i class="bi bi-brightness-high-fill fs-4"></i> -->
-                </span>
-            </a>
-            <!-- toggle button for mobile ui -->
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- home and nav bar section start -->
+    <div class="container px-lg-5">
+        
+        <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top px-lg-5 py-lg-2 shadow nv-bg">
+            <div class="container-fluid">
+              <a class="navbar-brand px-4 py-2 py-lg-1 fw-bold fs-2 fs-md-3 text-danger" href="#">LB</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
-            </button> -->
-            <!-- navbar links button -->
-            <!-- <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link   text-white" href="">
-                            About
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link   text-white" href="">
-                            Projects
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#emailMe" class="nav-link   text-white" href="">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </div> -->
-        </div>
-    </nav>
-
-    <section class="section-div">
-        <div class="container text-center">
-            <div class="row-sm mb-3 gx-5">
-                <ul class="nav justify-content-center fs-5">
-                    <li class="nav-item">
-                      <a class="nav-link text-white header-list" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white header-list" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white header-list" href="#contact">Contact</a>
-                    </li>
-                  </ul>
-            </div>
-        </div>
-        <br><br>
-        <div class="container text-center p-3" id="about">
-            <div class="row gx-5">
-                <div class="container main-pic">
-                    <div class="main-pic-content">
-                        <button type="submit" class="form-btn bg-warning">Open CV <i class="bi bi-download"></i></button>
-                    </div>
-                    <img src="images/main-pic.png" alt="">
+              </button>
+              <div class="offcanvas offcanvas-end blur-bg" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="col-md mb-3 p-3">
-                    <div class="row-md gx-5 mb-3 p-3">
-                        <p class="fs-1">Welcome</p>
-                    </div>
-                    <div class="row-md gx-5 mb-3 p-3">
-                        Hi! I'm Leonard Padada a Junior Web Developer based in Davao City, Philippines. Passionate on developing creative websites.
-                    </div> 
-                    <div class="row-md gx-5 p-3 justify-content-center">
-                        As a developer I am persistent and have the enthusiasm on learning new technologies. I've spend the last few years learning the technologies listed below.
-                    </div>
-                    <div class="row-md gx-5 p-3 justify-content-center">
-                        <div class="col-md gx-5">
-                            <img src="images/html5.png" class="img-fluid img-logo" alt="..." id="">
-                            <img src="images/css.png" class="img-fluid img-logo" alt="..." id="">
-                            <img src="images/bootsrap.png" class="img-fluid img-logo" alt="..." id="">
-                            <img src="images/js.png" class="img-fluid rounded img-logo" alt="..." id="">
-                            <img src="images/php.png" class="img-fluid img-logo" alt="..." id="">
-                        </div>
-                    </div>
-                </div>
-            
-
-                <!-- <div class="row-md gx-5 p-3 justify-content-center">
-                    <div class="col-md gx-5 mb-3 p-3">
-                        <p class="fs-1">Welcome</p>
-                    </div>
-                    <div class="col-md gx-5 mb-3 p-3">
-                        Hi! I'm Leonard Padada a Junior Web Developer based in Davao City, Philippines. Passionate on developing creative websites.
-                    </div>  
-                </div>
-    
-                <div class="row-md gx-5 p-3 justify-content-center">
-                    As a developer I am persistent and have the enthusiasm on learning new technologies. I've spend the last few years learning the technologies listed below.
-                </div>
-                <div class="row-md gx-5 p-3 justify-content-center">
-                    <div class="col-md gx-5">
-                        <img src="images/html5.png" class="img-fluid" alt="..." id="img-logo">
-                        <img src="images/css.png" class="img-fluid" alt="..." id="img-logo">
-                        <img src="images/bootsrap.png" class="img-fluid" alt="..." id="img-logo">
-                        <img src="images/js.png" class="img-fluid rounded" alt="..." id="img-logo">
-                        <img src="images/php.png" class="img-fluid" alt="..." id="img-logo">
-                    </div>
-                </div> -->
-        </div>
-        </div>
-    </section>
-
-    
-    
-
-    <!-- <div class="container-sm text-dark" id="skills">
-        <h4 class="text-decoration-underline">Languages I've Learned</h4>
-        <div class="row gx-5 border-bottom border-secondary">
-            <div class="col-md mb-3 p-3">
-                <h5>Front-End</h5>
-                <div class="row gx-5 p-3">
-                    <div class="col mb-3 p-3">
-                        <div class="text-center">
-                            <img src="images/html5.png" class="img-fluid" alt="..." id="img-logo">
-                            <figcaption class="figure-caption p-2">HTML5</figcaption>
-                        </div>
-                    </div>
-                    <div class="col mb-3 p-3">
-                        <div class="text-center">
-                            <img src="images/css.png" class="img-fluid" alt="..." id="img-logo">
-                            <figcaption class="figure-caption p-2">CSS3</figcaption>
-                        </div>
-                    </div>
-                    <div class="col mb-3 p-3">
-                        <div class="text-center">
-                            <img src="images/bootsrap.png" class="img-fluid" alt="..." id="img-logo">
-                            <figcaption class="figure-caption p-2">Bootstrap5</figcaption>
-                        </div>
-                    </div>
-                    <div class="col mb-3 p-3">
-                        <div class="text-center">
-                            <img src="images/js.png" class="img-fluid rounded" alt="..." id="img-logo">
-                            <figcaption class="figure-caption p-2">Javascript</figcaption>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="col-md mb-3 p-3">
-                <h5>Back-End</h5>
-                <div class="row gx-5 p-3">
-                    <div class="col mb-3 p-3">
-                        <div class="text-center">
-                            <img src="images/php.png" class="img-fluid" alt="..." id="img-logo">
-                            <figcaption class="figure-caption p-2">PHP</figcaption>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <div id="projects"></div>
-    <br>
-    <section class="section-div">
-        <div class="container-sm">
-            <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-duration="400" data-aos-once="true">
-                <h3>Things I've Done</h3>
-            </div>
-            <br>
-            <div class="container-sm text-white" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                      <div class="card h-100 border-secondary">
-                        <img src="images/pic-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body bg-dark">
-                          <h5 class="card-title">Project 1</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        </div>
-                        <div class="card-footer bg-dark border-dark">
-                            <div class="row fs-4">
-                                <div class="col justify-content-center">
-                                  <i class="bi bi-github"></i>&nbsp
-                                  <i class="bi bi-youtube"></i>
-                                </div>
+                    <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3" data-bs-dismiss="offcanvas">
+                        <li class="nav-item">
+                            <a class="nav-link t-list" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link t-list" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link t-list" href="#works">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link t-list" href="#contact">Contact</a>
+                        </li> 
+                        <li class="nav-item">
+                            <div>
+                                <input type="checkbox" class="checkbox" id="checkbox">
+                                <label for="checkbox" class="label-dm">
+                                    <i class="bi bi-moon-fill"></i>
+                                    <i class="bi bi-brightness-high"></i>
+                                    <div class="ball"></div>
+                                </label> 
                             </div>
-                          </div>
-                        <div class="card-footer bg-dark">
-                          <small class="text-warning">
-                              HTML, CSS, Bootstrap, Javascript
-                        </small>
-                          
-                        </div>
-                      </div>
+                            <!-- <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill mb-2" viewBox="0 0 16 16">
+                                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+                              </svg></a> -->
+                        </li>
+                    </ul>
                     </div>
-                    <div class="col">
-                        <div class="card h-100 border-secondary">
-                          <img src="images/pic-2.jpg" class="card-img-top" alt="...">
-                          <div class="card-body bg-dark">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam temporibus neque velit possimus explicabo </p>
-                          </div>
-                          <div class="card-footer bg-dark border-dark">
-                            <div class="row fs-4">
-                                <div class="col justify-content-center">
-                                  <i class="bi bi-github"></i>&nbsp
-                                  <i class="bi bi-youtube"></i>
-                                </div>
-                            </div>
-                          </div>
-                          <div class="card-footer bg-dark">
-                            <small class="text-warning">
-                                HTML, CSS, Bootstrap, Javascript
-                          </small>
-                          </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col">
-                        <div class="card h-100 border-secondary">
-                          <img src="images/pic-3.jpg" class="card-img-top" alt="...">
-                          <div class="card-body bg-dark">
-                            <h5 class="card-title">Project 2</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam temporibus neque velit possimus explicabo repellendus ea at repudiandae aperiam enim fuga sequi</p>
-                          </div>
-                          <div class="card-footer bg-dark border-dark">
-                            <div class="row fs-4">
-                                <div class="col justify-content-center">
-                                  <i class="bi bi-github"></i>&nbsp
-                                  <i class="bi bi-youtube"></i>
-                                </div>
-                            </div>
-                          </div>    
-                          <div class="card-footer bg-dark">
-                            <small class="text-warning">
-                                HTML, CSS, Bootstrap, Javascript
-                            </small>
-                          </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-    
-            <!-- <div class="row gx-5 border-bottom">
-                <div class="col-md mb-3 p-3">
-                    <p>First Demo-Project</p>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in optio, animi placeat a exercitationem nulla soluta iste deserunt, nemo temporibus quaerat aspernatur. Aut veritatis voluptatum reiciendis asperiores, amet tempore!</p>
-                    <p>Technologies: <i class="fs-5 bi bi-github"></i></p>
-                    <p>Source Code: <i class="fs-5 bi bi-github"></i></p>
-                </div>
-                <div class="col-md mb-3 p-3">
-                    <div class="row gx-5">
-                        <figure class="figure">
-                            <img src="images/pic-1.jpg" class="figure-img img-fluid rounded" alt="...">
-                            <figcaption class="figure-caption text-white">Live Demo: Link</figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row gx-5 border-bottom">
-                <div class="col-md mb-3 p-3">
-                    <p>Second Demo-Project</p>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in optio, animi placeat a exercitationem nulla soluta iste deserunt, nemo temporibus quaerat aspernatur. Aut veritatis voluptatum reiciendis asperiores, amet tempore!</p>
-                    <p>Technologies: <i class="fs-5 bi bi-github"></i></p>
-                    <p>Source Code: <i class="fs-5 bi bi-github"></i></p>
-                </div>
-                <div class="col-md mb-3 p-3">
-                    <div class="row gx-5">
-                        <figure class="figure">
-                            <img src="images/pic-2.jpg" class="figure-img img-fluid rounded" alt="...">
-                            <figcaption class="figure-caption text-white">Live Demo: Link</figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row gx-5 border-bottom">
-                <div class="col-md mb-3 p-3">
-                    <p>Third Demo-Project</p>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in optio, animi placeat a exercitationem nulla soluta iste deserunt, nemo temporibus quaerat aspernatur. Aut veritatis voluptatum reiciendis asperiores, amet tempore!</p>
-                    <p>Technologies: <i class="fs-5 bi bi-github"></i></p>
-                    <p>Source Code: <i class="fs-5 bi bi-github"></i></p>
-                </div>
-                <div class="col-md mb-3 p-3">
-                    <div class="row gx-5">
-                        <figure class="figure">
-                            <img src="images/pic-3.jpg" class="figure-img img-fluid rounded" alt="...">
-                            <figcaption class="figure-caption text-white">Live Demo:</figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div> -->
-        </div>
-    </section>
-    
-    <section class="section-div" style="min-height: 300px;">
-        <!-- contact section -->    
-    <div class="container-sm fs-6 p-3" id="contact" data-aos="fade-up" data-aos-duration="700" data-aos-once="true">
-        
-        <div class="row gx-5">
-            <div class="col-md mb-3">
-                <h4 class="text-decoration-underline p-3">Email me</h4>
-                <div class="p-3">
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control bg-dark border-dark text-white" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Name</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input type="email" class="form-control bg-dark border-dark text-white" id="floatingInput" placeholder="Email Address">
-                    <label for="floatingInput">Email address</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <textarea class="form-control bg-dark border-dark text-white" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
-                    <label for="floatingTextarea2">Comments</label>
-                  </div>
-                  <button class="form-btn bg-primary">Send</button>
-                  <!-- <button type="submit" class="form-btn bg-success">Open CV <i class="bi bi-download"></i></button> -->
-                  
-                </div>
-            </div>
-            <div class="col-md gx-5 mb-3">
-                <div class="para-div gx-5 mb-3">
-                    <img src="images/para-html.png" class="para-img img-fluid" data-value="2" alt="..">
-                    <img src="images/para-css.png" class="para-img img-fluid" data-value="-4" alt="..">
-                    <img src="images/para-bs.png" class="para-img img-fluid"  data-value="5"alt="..">
-                    <img src="images/para-js.png" class="para-img img-fluid" data-value="-3" alt="..">
-                    <img src="images/para-php.png" class="para-img img-fluid" data-value="-10" alt="..">
-                    
-                </div>
-            </div>
-        </div>
+          </nav>
+          
     </div>
+    <section class="" style="height: 100vh;"> 
+         
+        <div class="container">
+            <div class="row">
+
+                <div class="d-flex align-items-center justify-content-center" style="height: 700px;">
+                    <div class="row mt-5">
+                        <div class="col-md-6  mt-5">
+                            <div class="row  home-welcome">
+                                <h4 class="mb-3 fw-bold">WELCOME !</h4>
+                                <h1 class="mb-3 home-name">I am <span class="text-danger">Leonard Bryan Padada</span></h1>
+                                <h3 class="mb-3 home-pos text-muted">Freelance Web Developer</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mt-5 mt-md-3">
+                            <div class="row mb-4 mt-5">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <div class="col-md-3 home-btn-work">
+                                        <a href="#works"><button type="button" class="btn btn-danger home-btn-work">WORKS</button></a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <div class="col-md-3 home-btn-contact">
+                                        <a href="#about"><button type="button" class="btn btn-danger home-btn-work">ABOUT</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+
+                
+
+
+                <!-- <div class="col-md-6 order-md-first d-flex align-items-center justify-content-center">
+                  <div class="container me-1">
+                    <div class="row pb-2">
+                        <h1>H!</h1> 
+                      </div>
+                      <div class="row">
+                        <h2>I'm <span class="h2 text-danger"> Leonard Bryan Padada</span></h2>
+                      </div>
+                        <div class="row pb-3 text-muted">
+                            <h3>Freelance Web Developer</h3>
+                        </div>
+                        <div class="row pb-3">
+                            <div>
+                               <a href="#works">
+                                 <button type="button" class="btn btn-danger btn-works">My Works</button>
+                               </a> 
+                            </div>
+                    </div>
+                  
+               </div> -->
+            </div>     
+        </div>
+    </section>
+    <!-- home and nav bar section end -->
+
+    <!-- about me section start    -->
+    <section class=""   id="about">
+        <div class="container  d-flex align-items-center justify-content-center  t-about">
+
+            <div class="d-flex align-items-center justify-content-center" style="height: 700px;">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <div class="row mb-5">
+                            <h1 class="text-center">About me</h1>
+                        </div>
+                        <div class="row pe-md-5">
+                            <h5 class="mb-4">Hello!</h5>
+                            <p style="text-align: justify;">
+                                My name is Leonard Bryan Padada. A Freelance Web Developer lives in Davao City Philippines. I love to take challenges especially in complex programming.
+                                My dream is to be a full stack web developer. 
+                            </p>
+                            
+                        </div>
+                        <div class="row">
+                            <span>View my CV here: <a href="#contact"><button type="button" class="btn btn-danger ms-3 px-3 py-1"><i class="bi bi-eye"></i></button></a></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="row mb-5">
+                            <h1 class="text-center">Skills</h1>
+                        </div>  
+                        <div class="row">
+                            <h5 class="mb-5">Tech Stack</h5>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                                <div class="col-2 mb-2">
+                                    <img src="images/html5.png" class="rounded d-block" alt="..." style="width: 50px;">
+                                </div>
+                                <div class="col-2 mb-2">
+                                    <img src="images/css.png" class="rounded  d-block" alt="..." style="width: 50px;">
+                                </div>
+                                <div class="col-2 mb-2">
+                                    <img src="images/bootsrap.png" class="rounded d-block" alt="..." style="width: 50px;">
+                                </div>
+                                <div class="col-2 mb-2">
+                                    <img src="images/js.png" class="rounded d-block" alt="..." style="width: 50px;">
+                                </div>
+                                <div class="col-2 mb-2">
+                                    <img src="images/php.png" class="rounded  d-block" alt="..." style="width: 50px;">
+                                </div>
+                                
+                        </div>
+                    </div>
+                </div>
+                    
+            </div>
+
+
+            
+
+                <!-- <div class="row bg-danger">
+
+                    <div class="col-md-6 mt-5">
+                        <div class="row mb-3">
+                            <h4 class="text-danger">Personal Data</h4>
+                        </div>
+                        <div class="row mb-1 text-center">
+                            <div class="col">
+                                <h5>Name</h5>
+                            </div>
+                        </div>
+                        <div class="row mb-5 text-center">
+                            <div class="col">
+                                <span>Leonard Bryan Padada</span>
+                            </div>
+                        </div>
+                        <div class="row mb-1 text-center">
+                            <div class="col">
+                                <h5>Location</h5>
+                            </div>
+                        </div>
+                        <div class="row mb-5 text-center">
+                            <div class="col">
+                                <span>Philippines, Davao City 8000</span>
+                            </div>
+                        </div>
+                        <div class="row mb-1 text-center">
+                            <div class="col">
+                                <h5>Email Address</h5>
+                            </div>
+                        </div>
+                        <div class="row mb-5 text-center">
+                            <div class="col">
+                                <span>leonard23bryan@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mt-5 text-center">
+                        <div class="row mb-3">
+                            <h4 class="text-danger">Tech Stack</h4>
+                        </div>
+                        <div class="row mb-1 text-center">
+                            <div class="col">
+                                <h5>Front-end</h5>
+                            </div>
+                        </div>
+                        <div class="row mb-5 text-center">
+                            <div class="col">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Javascript</span>
+                                <span>Bootstrap 5</span>
+                            </div>
+                        </div>
+                        <div class="row mb-1 text-center mt-5">
+                            <div class="col">
+                                <h5>Back-end</h5>
+                            </div>
+                        </div>
+                        <div class="row mb-5 text-center">
+                            <div class="col">
+                                <span>PHP</span>
+                                <span>Javascript</span>
+                                <span>JQuery</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                        <div class="row mb-1 text-center mt-5">
+                            <div class="col">
+                                <h5>Tools</h5>
+                            </div>
+                        </div>
+                        <div class="row mb-5 text-center">
+                            <div class="col">
+                                <span>Github</span>
+                                <span>Sublime</span>
+                                <span>VS Code</span>
+                            </div>
+                        </div>
+                     </div>
+                </div>     -->
+
 
     </section>
-    
-    
-    <br><br><br>
-    <footer class="bg-dark text-white pt-3 pb-4">
-        <div class="container text-center text-md-left">
-            <div class="container text-center">
-                <div class="row justify-content-center">
-                    HTML, CSS, Bootstrap, Javascript
-                </div>
-                <div class="row justify-content-center">
-                    leonard23bryan@gmail.com
+    <!-- about me section end -->
+
+    <!-- works section start -->
+    <section class="" id="works">
+        <div class="container pb-md-5">
+            <div class="row t-works">
+                <h1 class="text-center p-5">Things I'vs Done</h1>
+            </div>
+            <div class="row">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="row">
+                        <div class="col-md-6 p-3 d-flex align-items-center justify-content-center">
+                            
+                            <div class="card mb-3 border-0 shadow-lg">
+                                <img src="images/pic-1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body card-bg">
+                                  <h5 class="card-title">Project Name #1</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. .</p>
+                                  <p class="card-text">
+                                      <small class="text-muted">Tech used: </small>
+                                      <span class="ps-2"><img src="images/html5.png" alt="" style="width: 25px;"></span>
+                                      <span class="ps-2"><img src="images/css.png" alt="" style="width: 25px;"></span>
+                                      <span class="ps-2"><img src="images/bootsrap.png" alt="" style="width: 25px;"></span>
+                                      <span class="ps-2"><img src="images/js.png" alt="" style="width: 25px;"></span>
+                                      <span class="ps-2"><img src="images/php.png" alt="" style="width: 25px;"></span>
+                                 </p>
+                                 <p class="card-text"><small class="text-muted">Surce Code: </small>
+                                    <span class="ps-2"><a href=""><i class="bi bi-github fs-4 text-black ms-1"></i></a></span>
+
+                                    <small class="text-muted ps-4">Demo:       
+                                    </small>
+                                    <span class="ps-2"><a href=""><i class="bi bi-youtube fs-3 text-danger ms-1"></i></a></span>
+                                </p>
+                                 
+                                </div>
+                              </div>
+                        
+                        </div>
+
+                         <div class="col-md-6 p-3 d-flex align-items-center justify-content-center">
+                            
+                            <div class="card mb-3 border-0 shadow-lg">
+                                <img src="images/pic-2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body card-bg">
+                                  <h5 class="card-title">Project Name #2</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text">
+                                    <small class="text-muted">Tech used: </small>
+                                      <span class="ps-2"><img src="images/html5.png" alt="" style="width: 25px;"></span>
+                                      <span class="ps-2"><img src="images/css.png" alt="" style="width: 25px;"></span>
+                                      <span class="ps-2"><img src="images/bootsrap.png" alt="" style="width: 25px;"></span>
+                                      <span class="ps-2"><img src="images/js.png" alt="" style="width: 25px;"></span>
+                                      <span class="ps-2"><img src="images/php.png" alt="" style="width: 25px;"></span>
+                                 </p>
+
+                                 <p class="card-text"><small class="text-muted">Surce Code: </small>
+                                    <span class="ps-2"><a href=""><i class="bi bi-github fs-4 text-black ms-1"></i></a></span>
+
+                                    <small class="text-muted ps-4">Demo:       
+                                    </small>
+                                    <span class="ps-2"><a href=""><i class="bi bi-youtube fs-3 text-danger ms-1"></i></a></span>
+                                </p>
+
+                                </div> 
+                              </div>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
-            
         </div>
-        
-        <a href="#" class="scrollUp">
-            <i class="bi bi-chevron-double-up text-warning"></i>
-        </a>
-    </footer>
-     <!-- Dark / Light Mode Button -->
-    <!-- <div class="dark-light-btn bg-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Activate Dark mode!" id="bgIcon">
-            <i class="bi bi-moon-stars-fill fs-5 text-white" id="moonIcon"></i>
-    </div> -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>AOS.init();</script>
+    </section>
+    <!-- works section end -->
+
+    <!-- contact me section start -->
+    <section class="" id="contact">
+        <div class="container">
+            <div class="row t-contact">
+
+                <div class="col-md-3">
+                </div>
+
+                <div class="col-md-6 d-flex align-items-center justify-content-center" style="height: 700px;">
+                    <div class="container">
+                        <div class="row-md mb-3 text-center">
+                            <h2>Send a Message</h2>
+                        </div>
+                        <div class="row-md form-floating mb-3">
+                            <input type="email" class="form-control floatingInput" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Name</label>
+                          </div>
+                          <div class="row-md form-floating mb-3">
+                            <input type="password" class="form-control floatingInput" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Email Address</label>
+                        </div>
+                        <div class="row-md form-floating mb-3">
+                            <textarea class="form-control floatingInput" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+                            <label for="floatingTextarea2">Comments</label>
+                        </div>
+                        <div class="row-md d-flex justify-content-center align-items-center">
+                            <a href="">
+                              <button type="button" class="btn btn-danger">Send</button>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                </div>
+
+                
+
+
+                <!-- <div class="col-6 col-md-4 order-md-first d-flex align-items-center justify-content-center contact-sec"> 
+                  <div class="container me-1">
+                    <div class="row mb-2">
+                        <h4 class="mb-4">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" 
+                                class="bi bi-envelope-fill text-danger" 
+                                viewBox="0 0 16 16">
+                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                              </svg></span>
+                            <span class="ms-3">leonard23bryan@gmail.com</span>
+                        </h4> 
+                      </div>
+                      <div class="row mb-3">
+                        <h4 class="mb-4">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-house-door-fill text-danger" viewBox="0 0 16 16">
+                                <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+                              </svg></span>
+                            <span class="ms-3">Philippines, Davao City 8000</span>
+                        </h4> 
+                      </div>
+                      <div class="row mb-3">
+                        <h4>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-telephone-fill text-danger" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                              </svg></span>
+                            <span class="ms-3"> +63 977 423 0302</span>
+                        </h4> 
+                      </div>
+                      <div class="row mb-3">
+                        <h2>
+                            <span></span>
+                            <span></span>
+                        </h2> 
+                      </div>
+                  </div> 
+               </div> -->
+        </div>
+    </section> 
+    <!-- contact me section end -->
+
+    <!-- footer start -->
+    <div class="card-footer d-flex justify-content-center border-0 t-footer">
+        <small class="text-secondary justify-content">&copy; 2022 Copyright | Freelance Web Developer</small>
+    </div>
+    <!-- footer end -->
+    
+    <script src="js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-</script>
-<script src="main.js"></script>
-
 </html>
