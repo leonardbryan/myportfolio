@@ -142,9 +142,25 @@
                             
                         </div>
                         <div class="row">
-                            <span>View my CV here: <a href="#contact"><button type="button" class="btn btn-danger ms-3 px-3 py-1"><i class="bi bi-eye"></i></button></a></span>
+                            <span>View my CV here: <button type="button" class="btn btn-danger ms-3 px-3 py-1" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-eye"></i></button></span>
                         </div>
                     </div>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">CV</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <embed src="files/LeonardBryanPadada.pdf#toolbar=0" type="application/pdf" width="100%" height="600px">
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
 
                     <div class="col-md-6">
                         <div class="row mb-5">
@@ -364,9 +380,9 @@
                             <label for="floatingTextarea2">Comments</label>
                         </div>
                         <div class="row-md d-flex justify-content-center align-items-center">
-                            <a href="">
-                              <button type="button" class="btn btn-danger">Send</button>
-                            </a> 
+                            
+                              <button type="button" class="btn btn-danger" id="liveToastBtn">Send</button>
+                            
                         </div>
                     </div>
                 </div>
@@ -416,6 +432,21 @@
         </div>
     </section> 
     <!-- contact me section end -->
+
+    <!-- start message toast -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header bg-danger text-white">
+            <strong class="me-auto">Notification</strong>
+            <!-- <small>11 mins ago</small> -->
+            <button type="button" class="btn-close bg-light" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Message Sent! Thank you!
+          </div>
+        </div>
+    </div>
+    <!-- end message toast -->
 
     <!-- footer start -->
     <div class="card-footer d-flex justify-content-center border-0 t-footer">
