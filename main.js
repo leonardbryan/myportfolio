@@ -12,12 +12,23 @@ let emailField = document.getElementById('floatingPassword')
 let textareaField = document.getElementById('floatingTextarea2')
 let tArea = document.querySelectorAll('textarea')
 
+let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+// function checkEmail(){
+//   if(emailField.value.match(pattern)){
+//     emailField.classList.remove('border-danger');
+//     emailField.classList.add('border-success');
+//   }
+//   else{
+//     emailField.classList.remove('border-success');
+//     emailField.classList.add('border-danger');    
+//   }
+// }
+
 if (toastTrigger) {
   toastTrigger.addEventListener('click', function () {
     var c = 0;
-    // var pattern = /^[^ ]+@[^ ]+\.[a-z]{2-3}$/;
-    // var pattern = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
-
+ 
     if(nameField.value == '' || nameField.value == null){
       nameField.classList.remove('border-success');
       nameField.classList.add('border-danger');
@@ -28,23 +39,14 @@ if (toastTrigger) {
       nameField.classList.add('border-success');
     }
 
-    if(emailField.value == '' || emailField.value == null){
-      emailField.classList.remove('border-success');
-      emailField.classList.add('border-danger');
-      c++;
+    if(emailField.value.match(pattern)){
+      emailField.classList.remove('border-danger');
+      emailField.classList.add('border-success');
     }
     else{
-        emailField.classList.remove('border-danger');
-        emailField.classList.add('border-success');
-      // if(emailField.value.match(pattern)){
-      //   emailField.classList.remove('border-danger');
-      //   emailField.classList.add('border-success');
-      // }
-      // else {
-      //   emailField.classList.remove('border-success');
-      //   emailField.classList.add('border-danger');
-      //   c++;
-      // }
+      emailField.classList.remove('border-success');
+      emailField.classList.add('border-danger');   
+      c++; 
     }
 
     if(textareaField.value == '' || textareaField.value == null){
